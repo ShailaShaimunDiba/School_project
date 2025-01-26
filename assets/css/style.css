@@ -14,7 +14,7 @@
     --primary-text-color: #be9f80;
     --secondary-text-color: #00595b;
     --primary-color: #00595b;
-    --primary-bg: #00595b;
+    --primary-bg-color: #00595b;
     --white-text: #fff;
     --white-bg: #fff;
 
@@ -43,8 +43,28 @@
     Common CSS
 ==========================*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
+}
 a {
     text-decoration: none;
+    display: inline-block;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 ,p {
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -65,7 +85,7 @@ img {
 ==========================*/
 
 .header .header_top {
-    background-color: var(--primary-bg);
+    background-color: var(--primary-bg-color);
     color: var(--white-text);
 }
 
@@ -86,6 +106,32 @@ img {
 }
 
 .header .header_middle .logo img {
+    width: 7rem;
+    height: 7rem;
+
+}
+/* .header .hearder_middle .title h1{
+    font-size: 1rem !important;
+} */
+
+.header .header_bottom{
+    background-color: var(--primary-bg-color);
+}
+.header .header_bottom .my_navbar ul li{
+    padding: 1.5rem 0.9rem;
+}
+
+.header .header_bottom .my_navbar ul li a {
+    display: block;
+    color: var(--white-text);
+    font-size: 1.3rem;
+    transition: 0.4s;
+}
+.header .header_bottom .my_navbar ul li a:hover{
+    color: var(--black-text);
+}
+
+.header .header_bottom .logo img {
     width: 7rem;
     height: 7rem;
 
