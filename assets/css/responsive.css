@@ -2,40 +2,44 @@
     .header .header_bottom .my_navbar ul li a {
         font-size: 1.2rem;
     }
+
     .header .header_bottom .my_navbar ul li {
         padding: 1.5rem 0.8rem;
     }
 
-    .header .header_top .login_buttons a, 
+    .header .header_top .login_buttons a,
     .header .header_top .contact_info a {
-        
+
         padding: 0.3rem 1rem;
         font-size: 0.7rem;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .header .header_bottom .my_navbar {
+    .header .header_bottom {
         position: relative;
+
     }
+
     .header .header_bottom .my_navbar ul {
         position: absolute;
         background-color: var(--primary-bg-color);
-        
-        top: 3rem;
+
+        top: 8rem;
         padding: 2.4rem;
         right: -100%;
         width: 0;
         opacity: 0;
         visibility: hidden;
         transition: 0.4s;
-        box-shadow: 0 0 10px rgba(195, 254, 250, 0.2);
+        box-shadow: 0 0 10px rgba(195, 254, 250, 0);
 
     }
+
     .header .header_bottom .my_navbar ul.active {
 
         right: 0;
-        width: 100%;        /*we need to discuss why the toggle options is not coming from right most corner*/
+        width: 70%;
         opacity: 1;
         visibility: visible;
 
@@ -45,16 +49,17 @@
         padding: 0.6rem 0.89rem;
         border-bottom: 1px solid var(--white-border);
     }
-    
+
 
     .header .header_bottom .my_navbar ul li:last-child {
-        
+
         border-bottom: 0;
     }
+
     .header .header_bottom .toggle_btn {
         /* color: var(--white-text) !important; */
         color: var(--white-text);
     }
 
-    
+
 }
