@@ -20,6 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.add("fa-bars");
         }
     }
+    //==========Live Chat JS============//
+    let chat_icon = document.querySelector('.my_chat_wrapper .chat_icon');
+    let chat_box = document.querySelector('.my_chat_wrapper .chat_box');
+
+    chat_icon.addEventListener('click', () => {
+        chat_box.classList.toggle('active');
+    })
+
 
     // Header Sticky JS
     let header_bottom = document.querySelector('.header_bottom');
@@ -31,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header_bottom.classList.remove('active');
         }
-    })
+    });
 
 
 
